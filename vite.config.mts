@@ -40,11 +40,11 @@ export default defineConfig(() => ({
     exclude: ["leaflet"]
   },
   build: {
-    sourcemap: true,
+    // sourcemap: true,
     rollupOptions: {
       input: [
-        resolve(__dirname, "index.html"),
-        resolve(__dirname, "land.html"),
+        // resolve(__dirname, "index.html"),
+        // resolve(__dirname, "land.html"),
         resolve(__dirname, "map.html")
       ]
     }
@@ -60,7 +60,7 @@ export default defineConfig(() => ({
       jQuery: "jquery"
     }),
     peggyPlugin(),
-    vitePluginFaviconsInject("./turbo.svg")
+    // vitePluginFaviconsInject("./turbo.svg")
   ],
   // https://vitest.dev/config/
   test: {
